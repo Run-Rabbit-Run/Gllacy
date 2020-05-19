@@ -1,0 +1,135 @@
+.header__body {
+  margin-top: 9px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.header__navigation-list {
+  @include reset-list;
+  @include font_weight-size-lheight(700, 16px, 18px);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.header__navigation-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header__navigation-item {
+  margin-right: 28px;
+
+  color: #ffffff;
+
+  border-bottom: 1px solid rgba(#ffffff, 0.2);
+}
+
+.header__right-side {
+  margin-left: auto;
+}
+
+.header__buttons-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  margin-right: 24px;
+}
+
+.header__navigation {
+  padding-top: 20px;
+}
+
+.header__button {
+  @include reset-button;
+  position: relative;
+
+  height: 32px;
+  min-width: 32px;
+
+  border-radius: 16px;
+
+  background-color: rgba(#ffffff, 0.2);
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+
+  &--log-in,
+  &--cart {
+    padding-left: 45px;
+    padding-right: 16px;
+    margin-left: 10px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+  }
+
+  &--search::after {
+    width: 17px;
+    height: 17px;
+    top: 7px;
+    left: 8px;
+    background-image: url(../img/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--log-in::after {
+    width: 21px;
+    height: 19px;
+    top: 6px;
+    left: 17px;
+    background-image: url(../img/log-in-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--cart::after {
+    width: 21px;
+    height: 20px;
+    top: 6px;
+    left: 16px;
+    background-image: url(../img/cart-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.header__right-side {
+  padding-top: 14px;
+}
+
+.header__info {
+  margin-top: 17px;
+}
+
+.header__work-time {
+  @include font_weight-size-lheight(700, 14px, 16px);
+  @include reset-p;
+  color: #ffffff;
+  text-align: right;
+}
+
+.header__phone-number {
+  @include font_weight-size-lheight(700, 22px, 24px);
+  @include reset-p;
+
+  margin-top: 4px;
+
+  color: #ffffff;
+  text-align: right;
+}
