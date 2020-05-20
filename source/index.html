@@ -16,7 +16,28 @@
 
     <nav class="header__navigation">
       <ul class="header__navigation-list">
-        <li class="header__navigation-item">Каталог</li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#">Каталог</a>
+
+          <ul class="header__navigation-sub-list">
+            <li class="header__navigation-sub-item">
+              <a class="header__navigation-sub-link header__navigation-sub-link--new" href="#">Новинки</a>
+            </li>
+            <li class="header__navigation-sub-item">
+              <a class="header__navigation-sub-link" href="#">Сливочное</a>
+            </li>
+            <li class="header__navigation-sub-item">
+              <a class="header__navigation-sub-link" href="#">Щербеты</a>
+            </li>
+            <li class="header__navigation-sub-item">
+              <a class="header__navigation-sub-link" href="#">Фруктовый лед</a>
+            </li>
+            <li class="header__navigation-sub-item">
+              <a class="header__navigation-sub-link" href="#">Мелорин</a>
+            </li>
+          </ul>
+
+        </li>
         <li class="header__navigation-item">
           <a class="header__navigation-link" href="#">Доставка и оплата</a>
         </li>
@@ -28,11 +49,23 @@
 
     <div class="header__right-side">
       <div class="header__buttons-wrapper">
-        <button class="header__button header__button--search">
-          <span class="visually-hidden">Поиск</span>
+        <button class="header__button" aria-label="Поиск">
+          <span class="header__button--search-icon">
+            <include src="build/img/search-icon.svg"></include>
+          </span>
         </button>
-        <button class="header__button header__button--log-in">Вход</button>
-        <button class="header__button header__button--cart">Пусто</button>
+        <button class="header__button header__button--log-in">
+          <span class="header__button--log-in-icon">
+            <include src="build/img/log-in-icon.svg"></include>
+          </span>
+          Вход
+        </button>
+        <button class="header__button header__button--cart">
+          <span class="header__button--cart-icon">
+            <include src="build/img/cart-icon.svg"></include>
+          </span>
+          Пусто
+        </button>
       </div>
       <div class="header__info">
         <p class="header__work-time">С 10 до 20, ежедневно</p>

@@ -56,22 +56,96 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: "Roboto","Open Sans",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
 
 .header__navigation-link {
+  display: inline-block;
+  position: relative;
   text-decoration: none;
-  color: #ffffff; }
+  color: #ffffff;
+  height: 32px;
+  padding-right: 13px;
+  padding-left: 13px;
+  padding-top: 6px;
+  box-sizing: border-box;
+  border-radius: 16px; }
+  .header__navigation-link::after {
+    position: absolute;
+    bottom: 7px;
+    left: 13px;
+    content: "";
+    width: calc(100% - 26px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .header__navigation-link:hover {
+    background-color: #f7f6f3;
+    color: #323232; }
+  .header__navigation-link:hover::after, .header__navigation-link--active::after {
+    border: none; }
+  .header__navigation-link:active {
+    box-shadow: inset 0px 2px 1px 0 #696969; }
+  .header__navigation-link--active {
+    background-color: #d07058;
+    cursor: default; }
 
 .header__navigation-item {
-  margin-right: 28px;
-  color: #ffffff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  margin-right: 2px;
+  color: #ffffff; }
+
+.header__navigation-sub-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  position: absolute;
+  top: 37px;
+  left: -8px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4); }
+
+.header__navigation-sub-link {
+  display: inline-block;
+  width: 143px;
+  height: 28px;
+  padding-left: 20px;
+  padding-top: 6px;
+  margin-top: 2px;
+  margin-bottom: 3px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #323232; }
+  .header__navigation-sub-link--new {
+    position: relative;
+    font-weight: 700;
+    height: 28px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    box-sizing: border-box; }
+    .header__navigation-sub-link--new::after {
+      position: absolute;
+      content: "";
+      bottom: -6px;
+      left: 6px;
+      width: calc(100% - 15px);
+      border-bottom: 1px solid rgba(50, 50, 50, 0.2); }
+  .header__navigation-sub-link:hover {
+    background-color: #fbded7; }
+  .header__navigation-sub-link:active {
+    background-color: #f6b5a5; }
+  .header__navigation-sub-link--active {
+    background-color: #d07058; }
 
 .header__right-side {
   margin-left: auto; }
@@ -82,10 +156,10 @@ body {
   flex-wrap: wrap; }
 
 .header__logo {
-  margin-right: 24px; }
+  margin-right: 11px; }
 
 .header__navigation {
-  padding-top: 20px; }
+  padding-top: 14px; }
 
 .header__button {
   border: none;
@@ -104,35 +178,30 @@ body {
     padding-left: 45px;
     padding-right: 16px;
     margin-left: 10px; }
-  .header__button::after {
+  .header__button--search-icon {
     position: absolute;
-    top: 0;
-    left: 0;
-    content: ""; }
-  .header__button--search::after {
     width: 17px;
     height: 17px;
     top: 7px;
-    left: 8px;
-    background-image: url(../img/search-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center; }
-  .header__button--log-in::after {
+    left: 8px; }
+  .header__button--log-in-icon {
+    position: absolute;
     width: 21px;
     height: 19px;
     top: 6px;
-    left: 17px;
-    background-image: url(../img/log-in-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center; }
-  .header__button--cart::after {
+    left: 17px; }
+  .header__button--cart-icon {
+    position: absolute;
     width: 21px;
     height: 20px;
     top: 6px;
-    left: 16px;
-    background-image: url(../img/cart-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center; }
+    left: 16px; }
+  .header__button:hover {
+    background-color: #f8f7f4;
+    color: #323232; }
+  .header__button:hover path,
+  .header__button:hover circle {
+    fill: #323232; }
 
 .header__right-side {
   padding-top: 14px; }
@@ -141,7 +210,7 @@ body {
   margin-top: 17px; }
 
 .header__work-time {
-  font-family: "Roboto","Open Sans",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -151,7 +220,7 @@ body {
   text-align: right; }
 
 .header__phone-number {
-  font-family: "Roboto","Open Sans",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 24px;
