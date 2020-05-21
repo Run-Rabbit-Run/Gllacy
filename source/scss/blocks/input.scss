@@ -1,0 +1,32 @@
+.input {
+  padding-left: 13px;
+  padding-right: 9px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+
+  height: 44px;
+  
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  
+  background-color: #ffffff;
+
+  box-sizing: border-box;
+
+  @include font_weight-size-lheight(700, 16px, 24px);
+  color: #323232;
+  
+  &::placeholder {
+    @include font_weight-size-lheight(400, 14px, 24px);
+    color: #999999;
+  }
+
+  &:hover {
+    border: 2px solid #c7c6c5;
+  }
+
+  &:focus {
+    outline: none;
+    border: solid 2px rgba(46, 136, 228, 0.52);
+  }
+}

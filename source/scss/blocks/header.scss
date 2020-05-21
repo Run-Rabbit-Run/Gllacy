@@ -76,9 +76,7 @@
   top: 37px;
   left: -8px;
 
-  background-color: #f8f7f4;
-  border-radius: 5px;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  display: none;
 }
 
 .header__navigation-sub-link {
@@ -136,6 +134,7 @@
 }
 
 .header__buttons-wrapper {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -207,6 +206,23 @@
   }
 }
 
+.header__button--full-cart {
+  padding-left: 45px;
+  padding-right: 16px;
+  margin-left: 10px;
+
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
+.header__button--full-cart-icon {
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  top: 6px;
+  left: 16px;
+}
+
 .header__right-side {
   padding-top: 14px;
 }
@@ -230,4 +246,67 @@
 
   color: #ffffff;
   text-align: right;
+}
+
+.header__search-wrapper {
+  position: absolute;
+  top: 36px;
+  left: -310px;
+  min-width: 341px;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  
+  display: none;
+}
+
+.header__input-search {
+  min-width: 311px;
+}
+
+.header__form {
+  display: flex;
+  flex-direction: column;
+  
+  position: absolute;
+  top: 36px;
+  left: -141px;
+  min-width: 277px;
+  padding: 20px 17px 22px 19px;
+  box-sizing: border-box;
+  
+  display: none;
+}
+
+.header__form-flex-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__input-login {
+  margin-bottom: 20px;  
+}
+
+.header__input-password {
+  margin-bottom: 20px;
+}
+
+.header__form-link {
+  position: relative;
+  display: inline;
+
+  @include font_weight-size-lheight(400, 13px, 21px);
+  color: #323232;
+  text-decoration: none;
+
+  margin-left: 20px;
+
+  &::after {
+    @include pseudo-element;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+
+    background-color: rgba(#000000, 0.3);
+  }
 }

@@ -19,7 +19,7 @@
         <li class="header__navigation-item">
           <a class="header__navigation-link" href="#">Каталог</a>
 
-          <ul class="header__navigation-sub-list">
+          <ul class="header__navigation-sub-list popup">
             <li class="header__navigation-sub-item">
               <a class="header__navigation-sub-link header__navigation-sub-link--new" href="#">Новинки</a>
             </li>
@@ -54,15 +54,41 @@
             <include src="build/img/search-icon.svg"></include>
           </span>
         </button>
+
+        <div class="header__search-wrapper popup">
+          <input class="input header__input-search" type="search" placeholder="Крем-брюле">
+        </div>
+
         <button class="header__button header__button--log-in">
           <span class="header__button--log-in-icon">
             <include src="build/img/log-in-icon.svg"></include>
           </span>
           Вход
         </button>
-        <button class="header__button header__button--cart">
-          <span class="header__button--cart-icon">
+
+        <form class="header__form popup" action="#" method="POST">
+          <input class="input header__input-login" type="text" id="login" name="login" placeholder="email@example.com">
+          <label class="visually-hidden" for="login">Логин</label>
+
+          <input class="input header__input-password" type="password" id="password" name="password" placeholder="&#149&#149&#149&#149&#149&#149&#149&#149">
+          <label class="visually-hidden" for="password">Пароль</label>
+
+          <div class="header__form-flex-wrapper">
+            <input class="button header__submit" type="submit" value="Войти">
+  
+            <div class="header__links-wrapper">
+              <a class="header__form-link" href="#">Забыли пароль?</a><br>
+              <a class="header__form-link" href="#">Новая регистрация</a>
+            </div>
+          </div>
+        </form>
+
+        <button class="header__button header__button--cart header__button--full-cart">
+          <span class="header__button--cart-icon js-off">
             <include src="build/img/cart-icon.svg"></include>
+          </span>
+          <span class="header__button--full-cart-icon">
+            <include src="build/img/full-cart-icon.svg"></include>
           </span>
           Пусто
         </button>
