@@ -204,6 +204,10 @@
   &:hover circle {
     fill: #323232;
   }
+
+  &:hover .cart-red-fill {
+    fill: #E84D37;
+  }
 }
 
 .header__button--full-cart {
@@ -309,4 +313,23 @@
 
     background-color: rgba(#000000, 0.3);
   }
+}
+
+.header__cart-items-list {
+  @include reset-list;
+}
+
+.header__cart-item-delete {
+  @include reset-button;
+  width: 11px;
+  height: 11px;
+
+  background-image: url(/img/x.svg);
+}
+
+.header__cart-item-image {
+  width: 33px;
+  height: 33px;
+
+  background-image: url(/img/icon-yellow-icecream.png);
 }
