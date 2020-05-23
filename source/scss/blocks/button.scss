@@ -1,12 +1,18 @@
 .button {
+  display: inline-block;
+
   border: none;
   border-radius: 21px;
 
   margin: 0;
   padding: 0;
-  width: 100px;
-  height: 44px;
 
+  min-width: 100px;
+  height: 44px;
+  box-sizing: border-box;
+
+  vertical-align: middle;
+  text-decoration: none;
   color: #fefefe;
   @include font_weight-size-lheight(700, 18px, 24px);
 
@@ -23,5 +29,11 @@
   &:active {
     box-shadow: inset 0px 2px 2px 0 #942718;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(to top, #e74a35, #f26843);
+  }
+
+  &--link {
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

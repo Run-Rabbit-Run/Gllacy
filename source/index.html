@@ -11,13 +11,13 @@
 
   <header class="header header__body">
     <div class="header__logo">
-      <img class="header__logo-image" src="./img/header-logo.svg" alt="логотип Gllacy Shop">
+      <img class="header__logo-image" src="./img/header-logo.svg" width="154" height="64" alt="логотип Gllacy Shop">
     </div>
 
     <nav class="header__navigation">
       <ul class="header__navigation-list">
-        <li class="header__navigation-item">
-          <a class="header__navigation-link" href="#">Каталог</a>
+        <li class="header__navigation-item header__catalog">
+          <a class="header__navigation-link header__catalog-link" href="#">Каталог</a>
 
           <ul class="header__navigation-sub-list popup">
             <li class="header__navigation-sub-item">
@@ -49,15 +49,15 @@
 
     <div class="header__right-side">
       <div class="header__buttons-wrapper">
-        <button class="header__button" aria-label="Поиск">
+        <button class="header__button header__button-search" aria-label="Поиск">
           <span class="header__button--search-icon">
             <include src="build/img/search-icon.svg"></include>
           </span>
+          <div class="header__search popup">
+            <input class="input header__input-search" type="search" placeholder="Крем-брюле">
+          </div>
         </button>
 
-        <div class="header__search-wrapper popup">
-          <input class="input header__input-search" type="search" placeholder="Крем-брюле">
-        </div>
 
         <button class="header__button header__button--log-in">
           <span class="header__button--log-in-icon">
@@ -83,21 +83,21 @@
           </div>
         </form>
 
-        <button class="header__button header__button--cart header__button--full-cart">
-          <span class="header__button--cart-icon js-off">
+        <button class="header__button header__button--cart">
+          <span class="header__button--cart-icon">
             <include src="build/img/cart-icon.svg"></include>
           </span>
-          <span class="header__button--full-cart-icon">
+          <span class="header__button--full-cart-icon js-off">
             <include src="build/img/full-cart-icon.svg"></include>
           </span>
-          2 товара
+          пусто
         </button>
 
         <div class="header__shoping-cart popup">
           <ul class="header__cart-items-list">
             <li class="header__cart-item">
               <button class="header__cart-item-delete"></button>
-              <div class="header__cart-item-image"></div>
+              <div class="header__cart-item-image header__cart-item-image--orange"></div>
               <div class="header__cart-item-name">Пломбир с апельсиновым джемом</div>
               <div class="header__cart-item-cost-calculation">
                 <span class="header__cart-item-weight">1,5</span> кг x <span class="header__cart-item-grey-color">
@@ -108,7 +108,28 @@
                 <span class="header__cart-item-total-cost">300</span> руб.
               </div>
             </li>
+            <li class="header__cart-item">
+              <button class="header__cart-item-delete"></button>
+              <div class="header__cart-item-image header__cart-item-image--strawberry"></div>
+              <div class="header__cart-item-name">Клубничный пломбир с присыпкой 
+                из белого шоколада</div>
+              <div class="header__cart-item-cost-calculation">
+                <span class="header__cart-item-weight">1,5</span> кг x <span class="header__cart-item-grey-color">
+                  <span class="header__cart-item-price">300</span> руб.
+                </span>
+              </div>
+              <div class="header__cart-item-total">
+                <span class="header__cart-item-total-cost">450</span> руб.
+              </div>
+            </li>
           </ul>
+
+          <div class="header__cart-total">
+            Итого: <span class="header__cart-total-price">750</span> руб.
+          </div>
+
+          <a class="header__cart-order-button button button--link" href="">Оформить заказ</a>
+
         </div>
       </div>
       <div class="header__info">
@@ -118,5 +139,6 @@
     </div>
   </header>
   
+  <script src="js/main.js"></script>
 </body>
 </html>
