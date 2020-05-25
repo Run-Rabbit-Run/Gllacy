@@ -82,6 +82,15 @@ gulp.task("copy", function () {
   .pipe(gulp.dest("build"));
 });
 
+gulp.task("copy-js", function () {
+  return gulp.src([
+    "source/js/**"
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"));
+});
+
 // gulp.task("serve", function () {
 //   server.init({
 //     server: "build/"
@@ -93,10 +102,12 @@ gulp.task("copy", function () {
 // });
 
 gulp.task('watch', function() {  // слежение за HTML и CSS и обновление браузера
-  gulp.watch(['./build/*.html', './build/css/**/*.css'], gulp.parallel(server.reload));
+  gulp.watch(['./build/*.html', './build/css/**/*.css', './build/js/*.js'], gulp.parallel(server.reload));
   gulp.watch('./source/scss/**/*.scss', gulp.parallel('style'))
   .on("change", server.reload); // слежение за SCSS и компиляция в CSS
   gulp.watch('./source/*.html', gulp.parallel('html'))
+  .on("change", server.reload);
+  gulp.watch('./source/js/*.js', gulp.parallel('copy-js'))
   .on("change", server.reload);
   
   // watch('./source/scss/**/*.scss', function () {   // добавляем задержку в компиляцию в 1 секунду, чтобы избежать ошибок
