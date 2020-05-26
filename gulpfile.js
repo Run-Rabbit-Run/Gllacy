@@ -12,6 +12,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var server = require("browser-sync").create();
+var concat = require('gulp-concat');
 
 gulp.task("style", function (done) {
   gulp.src("source/scss/style.scss")
@@ -74,22 +75,27 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**"
+    "source/img/**"
   ], {
     base: "source"
   })
   .pipe(gulp.dest("build"));
 });
 
-gulp.task("copy-js", function () {
-  return gulp.src([
-    "source/js/**"
-  ], {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"));
+gulp.task('scripts', function() {
+  return gulp.src('source/js/*.js')
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('build/js'));
 });
+
+// gulp.task("copy-js", function () {
+//   return gulp.src([
+//     "source/js/**"
+//   ], {
+//     base: "source"
+//   })
+//   .pipe(gulp.dest("build"));
+// });
 
 // gulp.task("serve", function () {
 //   server.init({
@@ -107,7 +113,7 @@ gulp.task('watch', function() {  // слежение за HTML и CSS и обн�
   .on("change", server.reload); // слежение за SCSS и компиляция в CSS
   gulp.watch('./source/*.html', gulp.parallel('html'))
   .on("change", server.reload);
-  gulp.watch('./source/js/*.js', gulp.parallel('copy-js'))
+  gulp.watch('./source/js/*.js', gulp.parallel('scripts'))
   .on("change", server.reload);
   
   // watch('./source/scss/**/*.scss', function () {   // добавляем задержку в компиляцию в 1 секунду, чтобы избежать ошибок
@@ -124,4 +130,4 @@ gulp.task('server', function() {  // Задача запуска сервера 
   });
 });
 
-gulp.task('build', gulp.series(gulp.parallel("clean", "webp", "images"), "copy", "style", "sprite", "html", gulp.parallel("server", "watch")));
+gulp.task('build', gulp.series(gulp.parallel("clean", "webp", "images"), "copy", "style", "sprite", "html", "scripts", gulp.parallel("server", "watch")));
