@@ -527,9 +527,11 @@ body {
     background-image: url(/img/slide-1-background.png); }
   .slider__item--2 {
     background-image: url(/img/slide-2-background.png);
+    background-position: left 32px bottom 22px;
     display: none; }
   .slider__item--3 {
     background-image: url(/img/slide-3-background.png);
+    background-position: left 34px bottom 27px;
     display: none; }
 
 .slider__paragraph {
