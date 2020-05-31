@@ -187,6 +187,10 @@
     margin-left: 10px;
   }
 
+  &--cart {
+    pointer-events: none;
+  }
+
   &--search-icon {
     position: absolute;
     width: 17px;

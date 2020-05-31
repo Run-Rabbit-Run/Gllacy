@@ -278,6 +278,8 @@ body {
     padding-left: 45px;
     padding-right: 16px;
     margin-left: 10px; }
+  .header__button--cart {
+    pointer-events: none; }
   .header__button--search-icon {
     position: absolute;
     width: 17px;
@@ -578,3 +580,63 @@ body {
 .slider__toggle--active {
   background-color: #ffffff;
   pointer-events: none; }
+
+.promo {
+  width: 560px;
+  padding-top: 14px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 21px;
+  box-sizing: border-box;
+  border-radius: 12px; }
+
+.promo__name {
+  margin: 0;
+  margin-bottom: 16px;
+  margin-left: -2px;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff; }
+
+.promo__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff; }
+
+.promo--raspberry {
+  background-image: url(/img/raspberry-background.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.promo--chocolate {
+  background-image: url(/img/chocolate-background.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.promo__button-wrapper-flex {
+  display: flex;
+  flex-direction: row; }
+
+.promo__button {
+  height: 46px;
+  margin-top: 45px;
+  margin-left: auto;
+  padding-left: 22px;
+  padding-right: 23px;
+  padding-top: 9px;
+  border-radius: 23px; }
+
+.promotions__slider {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -234px;
+  z-index: 2; }

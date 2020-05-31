@@ -1,0 +1,56 @@
+.promo {
+  width: 560px;
+  padding-top: 14px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 21px;
+  box-sizing: border-box;
+
+  border-radius: 12px;
+}
+
+.promo__name {
+  margin: 0;
+  margin-bottom: 16px;
+  margin-left: -2px;
+  padding: 0;
+
+  @include font_weight-size-lheight(700, 35px, 41px);
+  color: #ffffff;
+}
+
+.promo__text {
+  @include reset-p;
+
+  @include font_weight-size-lheight(700, 18px, 22px);
+  color: #ffffff;
+}
+
+.promo--raspberry {
+  background-image: url(/img/raspberry-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.promo--chocolate {
+  background-image: url(/img/chocolate-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.promo__button-wrapper-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.promo__button {
+  height: 46px;
+
+  margin-top: 45px;
+  margin-left: auto;
+  padding-left: 22px;
+  padding-right: 23px;
+  padding-top: 9px;
+
+  border-radius: 23px;
+}
