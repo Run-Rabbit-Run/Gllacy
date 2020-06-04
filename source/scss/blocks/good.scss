@@ -1,0 +1,44 @@
+.good {
+  position: relative;
+
+  width: 267px;
+  padding-top: 6px;
+  box-sizing: border-box;
+}
+
+.good__price {
+  position: absolute;
+  bottom: 66px;
+  left: 0;
+
+  @include reset-p;
+  @include font_weight-size-lheight(700, 45px, 45px);
+  color: #ffffff;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);  
+}
+
+.good__price-weight {
+  @include font_weight-size-lheight(700, 30px, 45px);
+}
+
+.good__description {
+  @include reset-p;
+  @include font_weight-size-lheight(500, 16px, 22px);
+  color: #ffffff;
+  text-align: center;
+  text-decoration: underline rgba(#ffffff, 0.2);
+  text-underline-offset: 3px;
+
+  margin-top: 7px;
+}
+
+.good--hit::after {
+  @include pseudo-element;
+  top: 6px;
+  left: 0;
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url(/img/hit.png);
+}

@@ -640,3 +640,57 @@ body {
   justify-content: space-between;
   margin-top: -234px;
   z-index: 2; }
+
+.best-offer__promotions {
+  display: flex;
+  flex-direction: row;
+  margin-top: 34px;
+  justify-content: space-between; }
+
+.good {
+  position: relative;
+  width: 267px;
+  padding-top: 6px;
+  box-sizing: border-box; }
+
+.good__price {
+  position: absolute;
+  bottom: 66px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5); }
+
+.good__price-weight {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px; }
+
+.good__description {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-text-decoration: underline rgba(255, 255, 255, 0.2);
+          text-decoration: underline rgba(255, 255, 255, 0.2);
+  text-underline-offset: 3px;
+  margin-top: 7px; }
+
+.good--hit::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 0;
+  width: 61px;
+  height: 61px;
+  background-image: url(/img/hit.png); }
