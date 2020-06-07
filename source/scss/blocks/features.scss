@@ -1,0 +1,74 @@
+.features__best-offer {
+  margin-top: 38px;
+}
+
+.features {
+  background-image: url(/img/waffle-background.png);
+  background-repeat: repeat;
+  background-position: center;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  border-radius: 15px;
+}
+
+.features__header {
+  @include reset-p;
+  @include font_weight-size-lheight(500, 24px, 30px);
+  color: #323232;
+}
+
+.features__item-text {
+  @include reset-p;
+  @include font_weight-size-lheight(400, 16px, 22px);
+  color: #323232;
+
+  padding-right: 2px;
+
+  &::after {
+    @include pseudo-element;
+    top: 2px;
+    left: 0;
+    width: 49px;
+    height: 49px;
+  }
+
+  &--icecream-icon::after {
+    background-image: url(/img/icecream-icon.png);
+    background-repeat: no-repeat;
+  }
+  &--cow-icon::after {
+    background-image: url(/img/cow-icon.png);
+    background-repeat: no-repeat;
+  }
+  &--leaf-icon::after {
+    background-image: url(/img/leaf-icon.png);
+    background-repeat: no-repeat;
+  }
+  &--thermometer-icon::after {
+    background-image: url(/img/thermometer-icon.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.features__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include reset-list;
+}
+
+.features__item {
+  position: relative;
+  
+  width: 541px;
+  padding-left: 57px;
+  padding-top: 15px;
+  margin-top: 6px;
+  box-sizing: border-box;
+}
