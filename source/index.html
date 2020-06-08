@@ -242,7 +242,72 @@
         </li>
       </ul>
     </section>
+
+    <section class="conversations conversations__features">
+      <h2 class="visually-hidden">Блог и подписка на рассылку</h2>
+      <div class="blog">
+        <h3 class="blog__header">Новое в нашем блоге</h3>
+        <a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+      </div>
+
+      <div class="mailing">
+        <div class="mailing__content">
+          <h3 class="visually-hidden">Подписка на рассылку</h3>
+          <p class="mailing__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form class="mailing__form" action="#" method="POST">
+            <label class="visually-hidden" for="email">Введите ваш email</label>
+            <input class="mailing__input input" type="email" name="email" placeholder="email@example.com">
+            <button class="mailing__button button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="map map__conversations">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="map__image">
+        <img src="/img/map.png" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </div>
+      <div class="map__contacts">
+        <p class="map__address-label">Адрес главного офиса<br>
+          и офлайн-магазина:</p>
+        <p class="map__address-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+        <p class="map__phone-label">Для заказов по телефону:</p>
+        <p class="map__phone-number">8 812 450-25-25</p>
+        <p class="map__office-hours">(с 10 до 20 ежедневно)</p>
+        <a class="map__button button" href="#">Форма обратной связи</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer footer__map">
+    <ul class="footer__social-media-list">
+      <li class="footer__social-media-item">
+        <include src="build/img/twitter-icon.svg"></include>
+      </li>
+      <li class="footer__social-media-item">
+        <include src="build/img/instagram-icon.svg"></include>
+      </li>
+      <li class="footer__social-media-item">
+        <include src="build/img/facebook-icon.svg"></include>
+      </li>
+      <li class="footer__social-media-item">
+        <include src="build/img/vk-icon.svg"></include>
+      </li>
+    </ul>
+    <ul>
+      <li>Для поставщиков</li>
+      <li>Наши документы</li>
+      <li>О производстве</li>
+      <li>Экологические стандарты</li>
+    </ul>
+    <div>
+      <div>
+        <img src="" alt="">
+      </div>
+      <p></p>
+    </div>
+  </footer>
   
   <script src="js/main.js"></script>
 </body>

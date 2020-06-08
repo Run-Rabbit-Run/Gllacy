@@ -762,3 +762,198 @@ body {
   padding-top: 15px;
   margin-top: 6px;
   box-sizing: border-box; }
+
+.blog {
+  width: 560px;
+  min-height: 220px;
+  padding: 23px 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-image: url(/img/strawberry-icecream-background.jpg);
+  background-repeat: no-repeat; }
+
+.blog__header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  margin: 0;
+  padding: 0; }
+
+.blog__link {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  width: 290px;
+  margin-top: 3px; }
+
+.conversations__features {
+  margin-top: 40px; }
+
+.conversations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.mailing {
+  width: 560px;
+  min-height: 220px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-image: url(/img/post-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 5px solid transparent; }
+
+.mailing__content {
+  width: 550px;
+  min-height: 210px;
+  padding-left: 22px;
+  padding-right: 20px;
+  padding-top: 29px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #f8f7f4; }
+
+.mailing__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 36px; }
+
+.mailing__input {
+  width: 368px;
+  margin-right: 9px;
+  margin-top: -2px;
+  box-sizing: border-box; }
+  .mailing__input::-webkit-input-placeholder {
+    font-size: 16px; }
+  .mailing__input::-moz-placeholder {
+    font-size: 16px; }
+  .mailing__input:-ms-input-placeholder {
+    font-size: 16px; }
+  .mailing__input::-ms-input-placeholder {
+    font-size: 16px; }
+  .mailing__input::placeholder {
+    font-size: 16px; }
+
+.mailing__button {
+  padding-bottom: 2px;
+  padding-left: 17px;
+  padding-right: 17px; }
+
+.map__conversations {
+  margin-top: 39px; }
+
+.map {
+  position: relative; }
+
+.map__image {
+  position: absolute;
+  width: 1200px;
+  left: 50%;
+  transform: translateX(-50%); }
+  .map__image::after {
+    position: absolute;
+    content: "";
+    top: 139px;
+    left: 266px;
+    width: 218px;
+    height: 142px;
+    background-image: url(/img/pin.png);
+    background-repeat: no-repeat; }
+
+.map__contacts {
+  position: absolute;
+  top: 63px;
+  right: 0;
+  width: 302px;
+  padding: 30px 25px;
+  box-sizing: border-box;
+  background-color: #fefefe;
+  border-radius: 15px; }
+
+.map__address-label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0; }
+
+.map__address-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0; }
+
+.map__phone-label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  margin-top: 18px; }
+
+.map__phone-number {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+  margin-top: 4px; }
+
+.map__office-hours {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+  margin-top: 3px; }
+
+.map__button {
+  margin-top: 23px;
+  padding-top: 8px;
+  padding-left: 27px;
+  padding-right: 27px; }
+
+.footer__map {
+  margin-top: 469px; }
+
+.footer__social-media-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-top: 37px; }
+
+.footer__social-media-item {
+  width: 32px;
+  height: 32px;
+  margin-right: 13px;
+  border: 2px solid #c2cec7;
+  border-radius: 50%; }
+
+.footer__social-media-item svg {
+  opacity: 0.8; }
+
+.footer__social-media-item:hover svg {
+  opacity: 1; }
+
+.footer__social-media-item:active svg path,
+.footer__social-media-item:active svg g {
+  opacity: 1;
+  fill: #e9e9e9; }

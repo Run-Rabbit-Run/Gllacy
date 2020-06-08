@@ -1,0 +1,49 @@
+.mailing {
+  width: 560px;
+  min-height: 220px;
+  box-sizing: border-box;
+
+  border-radius: 15px;
+
+  background-image: url(/img/post-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: 5px solid transparent;
+}
+
+.mailing__content {
+  width: 550px;
+  min-height: 210px;
+  padding-left: 22px;
+  padding-right: 20px;
+  padding-top: 29px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+
+  border-radius: 10px;
+
+  background-color: #f8f7f4;
+}
+
+.mailing__text {
+  @include reset-p;
+  margin-bottom: 36px;
+}
+
+.mailing__input {
+  width: 368px;
+  margin-right: 9px;
+  margin-top: -2px;
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-size: 16px;
+  }
+}
+
+.mailing__button {
+  padding-bottom: 2px;
+  padding-left: 17px;
+  padding-right: 17px;
+}

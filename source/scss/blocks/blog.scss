@@ -1,0 +1,28 @@
+.blog {
+  width: 560px;
+  min-height: 220px;
+  padding: 23px 20px;
+  box-sizing: border-box;
+
+  border-radius: 15px;
+
+  background-image: url(/img/strawberry-icecream-background.jpg);
+  background-repeat: no-repeat;
+}
+
+.blog__header {
+  @include font_weight-size-lheight(500, 16px, 22px);
+  color: #323232;
+  @include reset-p
+}
+
+.blog__link {
+  display: inline-block;
+  @include font_weight-size-lheight(700, 24px, 30px);
+  color: #323232;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+
+  width: 290px;
+  margin-top: 3px;
+}
