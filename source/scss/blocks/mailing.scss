@@ -34,7 +34,6 @@
 .mailing__input {
   width: 368px;
   margin-right: 9px;
-  margin-top: -2px;
   box-sizing: border-box;
 
   &::placeholder {
@@ -43,7 +42,8 @@
 }
 
 .mailing__button {
-  padding-bottom: 2px;
+  padding-bottom: 5px;
   padding-left: 17px;
   padding-right: 17px;
+  margin-top: -2px;
 }

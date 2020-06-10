@@ -257,7 +257,7 @@
           <form class="mailing__form" action="#" method="POST">
             <label class="visually-hidden" for="email">Введите ваш email</label>
             <input class="mailing__input input" type="email" name="email" placeholder="email@example.com">
-            <button class="mailing__button button" type="submit">Отправить</button>
+            <input class="mailing__button button" type="submit" value="Отправить">
           </form>
         </div>
       </div>
@@ -316,6 +316,20 @@
       <p class="footer__copyright-text">Сделано <a class="footer__copyright-link" href="#">TheRabbitRun</a> © 2020</p>
     </div>
   </footer>
+
+  <div class="feedback popup">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <button class="feedback__button-close"><span class="visually-hidden">Закрыть окно</span></button>
+    <p class="feedback__header">Мы обязательно вам ответим!</p>
+    <form class="feedback__form" action="#" method="POST">
+      <label class="visually-hidden" for="name">Введите ваше Имя и Фамилию</label>
+      <input class="feedback__name input" name="name" type="text" placeholder="Имя Фамилия">
+      <label class="visually-hidden" for="email">Введите ваш email</label>
+      <input class="feedback__email input" name="email" type="email" placeholder="email@example.com">
+      <textarea class="feedback__textarea input" name="feedback" rows="5" placeholder="В свободной форме"></textarea>
+      <input class="feedback__button button" type="submit" value="Отправить">
+    </form>
+  </div>
   
   <script src="js/main.js"></script>
 </body>

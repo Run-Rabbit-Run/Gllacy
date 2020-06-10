@@ -831,7 +831,6 @@ body {
 .mailing__input {
   width: 368px;
   margin-right: 9px;
-  margin-top: -2px;
   box-sizing: border-box; }
   .mailing__input::-webkit-input-placeholder {
     font-size: 16px; }
@@ -845,9 +844,10 @@ body {
     font-size: 16px; }
 
 .mailing__button {
-  padding-bottom: 2px;
+  padding-bottom: 5px;
   padding-left: 17px;
-  padding-right: 17px; }
+  padding-right: 17px;
+  margin-top: -2px; }
 
 .map__conversations {
   margin-top: 39px; }
@@ -1025,3 +1025,57 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: #fefefe; }
+
+.feedback {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 477px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 35px;
+  z-index: 3; }
+
+.feedback__form {
+  display: flex;
+  flex-direction: column; }
+
+.feedback__name {
+  width: 267px;
+  margin-bottom: 20px; }
+
+.feedback__email {
+  width: 267px;
+  margin-bottom: 20px; }
+
+.feedback__textarea {
+  height: auto;
+  margin-bottom: 25px; }
+
+.feedback__button-close {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  background-image: url(/img/x-big.png);
+  background-repeat: no-repeat; }
+
+.feedback__header {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 25px; }
+
+.feedback__button {
+  width: 140px;
+  margin-left: auto; }
