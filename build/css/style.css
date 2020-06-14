@@ -950,7 +950,8 @@ body {
   height: 32px;
   margin-right: 13px;
   border: 2px solid #c2cec7;
-  border-radius: 50%; }
+  border-radius: 50%;
+  cursor: pointer; }
 
 .footer__social-media-item svg {
   opacity: 0.8; }
@@ -1027,15 +1028,18 @@ body {
   color: #fefefe; }
 
 .feedback {
-  position: absolute;
+  display: none;
+  position: fixed;
   top: 25%;
   left: 50%;
   transform: translateX(-50%);
   width: 477px;
-  padding-top: 15px;
+  padding-top: 16px;
   padding-bottom: 25px;
-  padding-left: 15px;
-  padding-right: 35px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
+  border-radius: 10px;
   z-index: 3; }
 
 .feedback__form {
@@ -1045,14 +1049,45 @@ body {
 .feedback__name {
   width: 267px;
   margin-bottom: 20px; }
+  .feedback__name::-webkit-input-placeholder {
+    font-size: 16px; }
+  .feedback__name::-moz-placeholder {
+    font-size: 16px; }
+  .feedback__name:-ms-input-placeholder {
+    font-size: 16px; }
+  .feedback__name::-ms-input-placeholder {
+    font-size: 16px; }
+  .feedback__name::placeholder {
+    font-size: 16px; }
 
 .feedback__email {
   width: 267px;
   margin-bottom: 20px; }
+  .feedback__email::-webkit-input-placeholder {
+    font-size: 16px; }
+  .feedback__email::-moz-placeholder {
+    font-size: 16px; }
+  .feedback__email:-ms-input-placeholder {
+    font-size: 16px; }
+  .feedback__email::-ms-input-placeholder {
+    font-size: 16px; }
+  .feedback__email::placeholder {
+    font-size: 16px; }
 
 .feedback__textarea {
-  height: auto;
-  margin-bottom: 25px; }
+  height: 155px;
+  margin-bottom: 25px;
+  resize: none; }
+  .feedback__textarea::-webkit-input-placeholder {
+    font-size: 16px; }
+  .feedback__textarea::-moz-placeholder {
+    font-size: 16px; }
+  .feedback__textarea:-ms-input-placeholder {
+    font-size: 16px; }
+  .feedback__textarea::-ms-input-placeholder {
+    font-size: 16px; }
+  .feedback__textarea::placeholder {
+    font-size: 16px; }
 
 .feedback__button-close {
   border: none;
@@ -1060,12 +1095,13 @@ body {
   padding: 0;
   position: absolute;
   top: 15px;
-  right: 25px;
+  right: 15px;
   width: 18px;
   height: 18px;
   background-color: transparent;
   background-image: url(/img/x-big.png);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  cursor: pointer; }
 
 .feedback__header {
   margin: 0;
@@ -1074,8 +1110,19 @@ body {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  margin-bottom: 25px; }
+  margin-bottom: 20px; }
 
 .feedback__button {
   width: 140px;
   margin-left: auto; }
+
+.dark-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: 2; }

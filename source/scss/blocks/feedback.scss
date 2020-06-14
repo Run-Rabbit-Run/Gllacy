@@ -1,15 +1,20 @@
 .feedback {
-  position: absolute;
+  display: none;
+  
+  position: fixed;
   top: 25%;
   left: 50%;
 
   transform: translateX(-50%);
 
   width: 477px;
-  padding-top: 15px;
+  padding-top: 16px;
   padding-bottom: 25px;
-  padding-left: 15px;
-  padding-right: 35px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
+
+  border-radius: 10px;
 
   z-index: 3;
 }
@@ -22,23 +27,37 @@
 .feedback__name {
   width: 267px;
   margin-bottom: 20px;
+
+  &::placeholder {
+    font-size: 16px;
+  }
 }
 
 .feedback__email {
   width: 267px;
   margin-bottom: 20px;
+
+  &::placeholder {
+    font-size: 16px;
+  }
 }
 
 .feedback__textarea {
-  height: auto;
+  height: 155px;
   margin-bottom: 25px;
+
+  resize: none;
+
+  &::placeholder {
+    font-size: 16px;
+  }
 }
 
 .feedback__button-close {
   @include reset-button;
   position: absolute;
   top: 15px;
-  right: 25px;
+  right: 15px;
 
   width: 18px;
   height: 18px;
@@ -46,16 +65,35 @@
   background-color: transparent;
   background-image: url(/img/x-big.png);
   background-repeat: no-repeat;
+
+  cursor: pointer;
 }
 
 .feedback__header {
   @include reset-p;
   @include font_weight-size-lheight(500, 24px, 28px);
 
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .feedback__button {
   width: 140px;
   margin-left: auto;
+}
+
+.dark-background {
+  display: none;
+  
+  position: fixed;
+  top: 0;
+  left: 0; 
+
+  min-width: 100%;
+  min-height: 100%;
+
+  background-color: #000000;
+
+  opacity: 0.5;
+
+  z-index: 2;
 }
