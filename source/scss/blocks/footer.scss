@@ -54,11 +54,6 @@
 
 .footer__menu-link {
   @include font_weight-size-lheight(400, 13px, 18px);
-  color: #ffffff;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-skip-ink: none;
-  text-decoration-color: #9db1a5;
   
   margin-right: 31px;
   margin-bottom: 5px;

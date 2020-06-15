@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Catalog</title>
+</head>
+<body>
+  <header class="header header__body">
+    <div class="header__logo">
+      <img class="header__logo-image" src="./img/header-logo.svg" width="154" height="64" alt="логотип Gllacy Shop">
+    </div>
+
+    <nav class="header__navigation">
+      <ul class="header__navigation-list">
+        <li class="header__navigation-item header__catalog">
+          <a class="header__navigation-link header__catalog-link" href="#">Каталог</a>
+
+          <ul class="header__navigation-sub-list popup">
+            <li class="header__navigation-sub-item">
+              <a class="header__navigation-sub-link header__navigation-sub-link--new" href="#">Новинки</a>
+            </li>
+            <li class="header__navigation-sub-item">
+              <a class="header__navigation-sub-link" href="#">Сливочное</a>
+            </li>
+            <li class="header__navigation-sub-item">
+              <a class="header__navigation-sub-link" href="#">Щербеты</a>
+            </li>
+            <li class="header__navigation-sub-item">
+              <a class="header__navigation-sub-link" href="#">Фруктовый лед</a>
+            </li>
+            <li class="header__navigation-sub-item">
+              <a class="header__navigation-sub-link" href="#">Мелорин</a>
+            </li>
+          </ul>
+
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#">О Компании</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__right-side">
+      <div class="header__buttons-wrapper">
+        <button class="header__button header__button-search" aria-label="Поиск">
+          <span class="header__button--search-icon">
+            <include src="build/img/search-icon.svg"></include>
+          </span>
+        </button>
+
+        <div class="header__search popup">
+          <input class="input header__input-search" type="search" placeholder="Крем-брюле">
+        </div>
+
+        
+        <button class="header__button header__button--log-in">
+          <span class="header__button--log-in-icon">
+            <include src="build/img/log-in-icon.svg"></include>
+          </span>
+          Вход
+        </button>
+
+        <form class="header__form popup" action="#" method="POST">
+          <input class="input header__input-login" type="text" id="login" name="login" placeholder="email@example.com">
+          <label class="visually-hidden" for="login">Логин</label>
+
+          <input class="input header__input-password" type="password" id="password" name="password" placeholder="&#149&#149&#149&#149&#149&#149&#149&#149">
+          <label class="visually-hidden" for="password">Пароль</label>
+
+          <div class="header__form-flex-wrapper">
+            <input class="button header__submit" type="submit" value="Войти">
+  
+            <div class="header__links-wrapper">
+              <a class="header__form-link" href="#">Забыли пароль?</a><br>
+              <a class="header__form-link" href="#">Новая регистрация</a>
+            </div>
+          </div>
+        </form>
+
+        <button class="header__button header__button--cart">
+          <span class="header__button--cart-icon">
+            <include src="build/img/cart-icon.svg"></include>
+          </span>
+          <span class="header__button--full-cart-icon">
+            <include src="build/img/full-cart-icon.svg"></include>
+          </span>
+          Пусто
+        </button>
+
+        <div class="header__shoping-cart popup">
+          <ul class="header__cart-items-list">
+            <li class="header__cart-item">
+              <button class="header__cart-item-delete"></button>
+              <div class="header__cart-item-image header__cart-item-image--orange"></div>
+              <div class="header__cart-item-name">Пломбир с апельсиновым джемом</div>
+              <div class="header__cart-item-cost-calculation">
+                <span class="header__cart-item-weight">1,5</span> кг x <span class="header__cart-item-grey-color">
+                  <span class="header__cart-item-price">200</span> руб.
+                </span>
+              </div>
+              <div class="header__cart-item-total">
+                <span class="header__cart-item-total-cost">300</span> руб.
+              </div>
+            </li>
+            <li class="header__cart-item">
+              <button class="header__cart-item-delete"></button>
+              <div class="header__cart-item-image header__cart-item-image--strawberry"></div>
+              <div class="header__cart-item-name">Клубничный пломбир с присыпкой 
+                из белого шоколада</div>
+              <div class="header__cart-item-cost-calculation">
+                <span class="header__cart-item-weight">1,5</span> кг x <span class="header__cart-item-grey-color">
+                  <span class="header__cart-item-price">300</span> руб.
+                </span>
+              </div>
+              <div class="header__cart-item-total">
+                <span class="header__cart-item-total-cost">450</span> руб.
+              </div>
+            </li>
+          </ul>
+
+          <div class="header__cart-total">
+            Итого: <span class="header__cart-total-price">750</span> руб.
+          </div>
+
+          <a class="header__cart-order-button button button--link" href="">Оформить заказ</a>
+
+        </div>
+      </div>
+      <div class="header__info">
+        <p class="header__work-time">С 10 до 20, ежедневно</p>
+        <p class="header__phone-number">8 812 450-25-25</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <h1 class="visually-hidden">Каталог товаров</h1>
+    <nav class="catalog-navigation catalog-navigation__header">
+      <ul class="catalog-navigation__list">
+        <li class="catalog-navigation__item">
+          <a class="catalog-navigation__link link--white" href="#">Главная</a>
+        </li>
+        <li class="catalog-navigation__item">
+          <a class="catalog-navigation__link link--white" href="#">Каталог</a>
+        </li>
+        <li class="catalog-navigation__item">
+          <a class="catalog-navigation__link link--white" href="#">Сливочное</a>
+        </li>
+      </ul>
+    </nav>
+    <h2 class="catalog-navigation__title">Сливочное мороженое</h2>
+
+  </main>
+
+  <script src="js/catalog.js"></script>
+</body>
+</html>

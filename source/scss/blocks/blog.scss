@@ -19,9 +19,6 @@
 .blog__link {
   display: inline-block;
   @include font_weight-size-lheight(700, 24px, 30px);
-  color: #323232;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
 
   width: 290px;
   margin-top: 3px;

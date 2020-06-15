@@ -1,0 +1,27 @@
+.link--white {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-skip-ink: none;
+  text-decoration-color: #9db1a5;
+
+  &:hover,
+  &:active {
+    color: #ffbc9e;
+    text-decoration-color: #a7a294;
+  }
+}
+
+.link--black {
+  color: #323232;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-skip-ink: none;
+  text-decoration-color: #353535;
+
+  &:hover,
+  &:active {
+    color: #e84d37;
+    text-decoration-color: #f9cdc4;
+  }
+}

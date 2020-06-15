@@ -83,8 +83,14 @@ gulp.task("copy", function () {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src('source/js/*.js')
+  return gulp.src('source/js/index/*.js')
     .pipe(concat('main.js'))
+    .pipe(gulp.dest('build/js'));
+});
+
+gulp.task('scripts2', function() {
+  return gulp.src('source/js/catalog/*.js')
+    .pipe(concat('catalog.js'))
     .pipe(gulp.dest('build/js'));
 });
 
@@ -113,7 +119,7 @@ gulp.task('watch', function() {  // слежение за HTML и CSS и обн�
   .on("change", server.reload); // слежение за SCSS и компиляция в CSS
   gulp.watch('./source/*.html', gulp.parallel('html'))
   .on("change", server.reload);
-  gulp.watch('./source/js/*.js', gulp.parallel('scripts'))
+  gulp.watch('./source/js/**/*.js', gulp.parallel('scripts', 'scripts2'))
   .on("change", server.reload);
   
   // watch('./source/scss/**/*.scss', function () {   // добавляем задержку в компиляцию в 1 секунду, чтобы избежать ошибок
@@ -130,4 +136,4 @@ gulp.task('server', function() {  // Задача запуска сервера 
   });
 });
 
-gulp.task('build', gulp.series(gulp.parallel("clean", "webp", "images"), "copy", "style", "sprite", "html", "scripts", gulp.parallel("server", "watch")));
+gulp.task('build', gulp.series(gulp.parallel("clean", "webp", "images"), "copy", "style", "sprite", "html", "scripts", 'scripts2', gulp.parallel("server", "watch")));
