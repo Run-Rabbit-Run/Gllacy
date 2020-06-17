@@ -1,0 +1,46 @@
+.filter__catalog-navigation {
+  margin-top: 28px;
+}
+
+.filter__sort {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__name {
+  @include font_weight-size-lheight(500, 14px, 16px);
+  color: #ffffff;
+
+  margin-left: 16px;
+  margin-bottom: 6px;
+}
+
+.filter__select {
+  margin: 0;
+  padding: 8px 0 8px 15px;
+  width: 195px;
+  
+  border-radius: 20px;
+  border-color: #a9bab0;
+  
+  background-color: #a9bab0;
+  appearance: none;
+  background-image: url(/img/icon-select.png);
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+
+  color: #ffffff;
+  @include font_weight-size-lheight(500, 16px, 18px);
+
+  &:focus {
+    background-color: #ffffff;
+    background-image: url(/img/icon-select-active.png);
+
+    color: #323232;
+  }
+}
+
+.filter__option {
+  @include font_weight-size-lheight(400, 14px, 16px);
+  color: #000000;
+}

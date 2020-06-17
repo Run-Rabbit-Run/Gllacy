@@ -155,6 +155,58 @@
     </nav>
     <h2 class="catalog-navigation__title">Сливочное мороженое</h2>
 
+    <form class="filter filter__catalog-navigation" action="#" method="POST">
+      <div class="filter__sort">
+        <label class="filter__name" for="sort-id">Сортировка:</label>
+        <select class="filter__select" name="sort" id="sort-id">
+          <option class="filter__option" value="popular">по популярности</option>
+          <option class="filter__option" value="cheap-first">сначала недорогие</option>
+          <option class="filter__option" value="expensive-first">сначала дорогие</option>
+          <option class="filter__option" value="fats">по жирности</option>
+        </select>
+      </div>
+
+      <div>
+        <p></p>
+        <div></div>
+      </div>
+
+      <div>
+        <label for="">
+         <input type="radio">
+         0%
+        </label>
+        <label for="">
+         <input type="radio">
+         до 10%
+        </label>
+        <label for="">
+         <input type="radio">
+         до 30%
+        </label>
+        <label for="">
+         <input type="radio">
+         выше 30%
+        </label>
+      </div>
+
+      <div>
+        <label for="">Наполнители</label>
+        <label for=""></label>
+        <input type="checkbox">
+        <label for=""></label>
+        <input type="checkbox">
+        <label for=""></label>
+        <input type="checkbox">
+        <label for=""></label>
+        <input type="checkbox">
+        <label for=""></label>
+        <input type="checkbox">
+      </div>
+
+      <input type="submit" value="Применить">
+    </form>
+
   </main>
 
   <script src="js/catalog.js"></script>
