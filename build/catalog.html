@@ -157,8 +157,8 @@
 
     <form class="filter filter__catalog-navigation" action="#" method="POST">
       <div class="filter__sort">
-        <label class="filter__name" for="sort-id">Сортировка:</label>
-        <select class="filter__select" name="sort" id="sort-id">
+        <label class="filter__sort-title" for="sort-id">Сортировка:</label>
+        <select class="filter__select filter-border" name="sort" id="sort-id">
           <option class="filter__option" value="popular">по популярности</option>
           <option class="filter__option" value="cheap-first">сначала недорогие</option>
           <option class="filter__option" value="expensive-first">сначала дорогие</option>
@@ -166,45 +166,57 @@
         </select>
       </div>
 
-      <div>
-        <p></p>
-        <div></div>
+      <div class="filter__price">
+        <p class="filter__price-title">Цена: 
+          <input class="filter__price-input" type="text" name="min-price" value="100">
+           руб. – 
+           <input class="filter__price-input" type="text" name="max-price" value="500">
+          руб.</p>
+        <div class="filter__price-range filter-border">
+          <div class="filter__range-bar"></div>
+          <div class="filter__range-button filter__range-button-left"></div>
+          <div class="filter__range-button filter__range-button-right"></div>
+        </div>
       </div>
 
-      <div>
-        <label for="">
-         <input type="radio">
-         0%
-        </label>
-        <label for="">
-         <input type="radio">
-         до 10%
-        </label>
-        <label for="">
-         <input type="radio">
-         до 30%
-        </label>
-        <label for="">
-         <input type="radio">
-         выше 30%
-        </label>
-      </div>
+      <fieldset class="filter__richness">
+        <legend class="filter__richness-title">Жирность:</legend>
+        <div class="filter__richness-wrapper filter-border">
+          <input class="visually-hidden filter__richness-input" id="0" name="richness" value="0%" type="radio">
+          <label class="filter__richness-input-label" for="0">0%</label>
 
-      <div>
-        <label for="">Наполнители</label>
-        <label for=""></label>
-        <input type="checkbox">
-        <label for=""></label>
-        <input type="checkbox">
-        <label for=""></label>
-        <input type="checkbox">
-        <label for=""></label>
-        <input type="checkbox">
-        <label for=""></label>
-        <input type="checkbox">
-      </div>
+          <input class="visually-hidden filter__richness-input" id="less10" name="richness" value="&#60;10%" type="radio" checked="">
+          <label class="filter__richness-input-label" for="less10">до 10%</label>
 
-      <input type="submit" value="Применить">
+          <input class="visually-hidden filter__richness-input" id="less30" name="richness" value="&#60;30%" type="radio">
+          <label class="filter__richness-input-label" for="less30">до 30%</label>
+
+          <input class="visually-hidden filter__richness-input" id="more30" name="richness" value="&#62;30%" type="radio">
+          <label class="filter__richness-input-label" for="more30">выше 30%</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="filter__fillers">
+        <legend class="filter__fillers-title">Наполнители:</legend>
+        <div class="filter__fillers-wrapper filter-border">
+          <input class="visually-hidden filter__fillers-input" type="checkbox" name="filler" value="chocolate" id="chocolate" checked="">
+          <label class="filter__fillers-label" for="chocolate">шоколадные</label>
+
+          <input class="visually-hidden filter__fillers-input" type="checkbox" name="filler" value="sugar" id="sugar" checked="">
+          <label class="filter__fillers-label" for="sugar">сахарные присыпки</label>
+
+          <input class="visually-hidden filter__fillers-input" type="checkbox" name="filler" value="fruit" id="fruit">
+          <label class="filter__fillers-label" for="fruit">фрукты</label>
+
+          <input class="visually-hidden filter__fillers-input" type="checkbox" name="filler" value="syrup" id="syrup">
+          <label class="filter__fillers-label" for="syrup">сиропы</label>
+
+          <input class="visually-hidden filter__fillers-input" type="checkbox" name="filler" value="jam" id="jam">
+          <label class="filter__fillers-label" for="jam">джемы</label>
+        </div>
+      </fieldset>
+
+      <input class="filter__submit-button" type="submit" value="Применить">
     </form>
 
   </main>
