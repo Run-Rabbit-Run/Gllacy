@@ -1,0 +1,15 @@
+.goods {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.goods__filter {
+  margin-top: 34px;
+}
+
+.good__item {
+  margin-bottom: 32px;
+}
+

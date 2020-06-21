@@ -653,6 +653,14 @@ body {
   width: 267px;
   padding-top: 6px;
   box-sizing: border-box; }
+  .good:hover {
+    z-index: 1; }
+  .good:hover .good__hover {
+    display: block;
+    z-index: -1; }
+  .good:hover .good__link {
+    display: block;
+    z-index: 2; }
 
 .good__price {
   position: absolute;
@@ -695,6 +703,25 @@ body {
   width: 61px;
   height: 61px;
   background-image: url(/img/hit.png); }
+
+.good__hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -13px;
+  width: 293px;
+  height: 406px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  opacity: 0.3;
+  z-index: -1; }
+
+.good__link {
+  display: none;
+  position: absolute;
+  bottom: -60px;
+  left: 32px;
+  z-index: 2; }
 
 .features__best-offer {
   margin-top: 38px; }
@@ -1472,3 +1499,15 @@ body {
     box-shadow: inset 0 2px 1px #696969;
     border: none;
     color: #323232; }
+
+.goods {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.goods__filter {
+  margin-top: 34px; }
+
+.good__item {
+  margin-bottom: 32px; }

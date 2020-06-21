@@ -4,6 +4,20 @@
   width: 267px;
   padding-top: 6px;
   box-sizing: border-box;
+
+  &:hover {
+    z-index: 1;
+  }
+
+  &:hover .good__hover {
+    display: block;
+    z-index: -1;
+  }
+
+  &:hover .good__link {
+    display: block;
+    z-index: 2;
+  }
 }
 
 .good__price {
@@ -41,4 +55,31 @@
   height: 61px;
 
   background-image: url(/img/hit.png);
+}
+
+.good__hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -13px;
+
+  width: 293px;
+  height: 406px;
+
+  background-color: #ffffff;
+
+  border-radius: 8px;
+
+  opacity: 0.3;
+
+  z-index: -1;
+}
+
+.good__link {
+  display: none;
+  position: absolute;
+  bottom: -60px;
+  left: 32px;
+
+  z-index: 2;
 }
