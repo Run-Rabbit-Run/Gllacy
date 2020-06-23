@@ -9,7 +9,90 @@
   margin-top: 34px;
 }
 
-.good__item {
+.goods__item {
   margin-bottom: 32px;
 }
 
+.goods__pages {
+  display: flex;
+  flex-direction: row;
+
+  min-width: 80px;
+  margin-left: auto;
+  margin-top: 47px;
+  box-sizing: border-box;
+}
+
+.goods__pages-list {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+}
+
+.goods__button {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  background-color: transparent;
+
+  &--active path {
+    fill: #ffffff;
+  }
+
+  &--active {
+    cursor: pointer;
+  }
+
+  &--previous {
+    transform: rotate(180deg);
+    margin-right: 15px;
+  }
+
+  &--next {
+    margin-left: 15px;
+  }
+}
+
+.goods__page {
+  display: flex;
+
+  width: 26px;
+  height: 26px;
+  margin-right: 4px;
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: #9db1a5;
+    cursor: pointer;
+  }
+  
+  &--current {
+    background-color: #ffffff;
+
+    pointer-events: none;
+  }
+
+  &--current .goods__page-link {
+    color: #323232;
+  }
+}
+
+.goods__page-link {
+  display: inline-block;
+  text-decoration: none;
+  @include font_weight-size-lheight(500, 16px, 18px);
+  color: #ffffff;
+  
+  width: 100%;
+  height: 100%;
+  padding-left: 9px;
+  padding-top: 5px;
+  
+}

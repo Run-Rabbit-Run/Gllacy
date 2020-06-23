@@ -78,6 +78,8 @@
   position: absolute;
   top: 37px;
   left: -8px;
+  
+  z-index: 4;
 
   display: none;
 }
@@ -281,6 +283,8 @@
   min-width: 341px;
   padding: 20px 15px;
   box-sizing: border-box;
+
+  z-index: 4;
   
   display: none;
 
@@ -308,6 +312,8 @@
   min-width: 277px;
   padding: 20px 17px 22px 19px;
   box-sizing: border-box;
+
+  z-index: 4;
   
   display: none;
 }

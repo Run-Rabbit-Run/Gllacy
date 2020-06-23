@@ -46,6 +46,10 @@ body {
   background-color: #849d8f;
   box-sizing: border-box; }
 
+.main {
+  position: relative;
+  z-index: auto; }
+
 .input {
   padding-left: 13px;
   padding-right: 9px;
@@ -199,6 +203,7 @@ body {
   position: absolute;
   top: 37px;
   left: -8px;
+  z-index: 4;
   display: none; }
 
 .header__navigation-sub-list::after {
@@ -357,6 +362,7 @@ body {
   min-width: 341px;
   padding: 20px 15px;
   box-sizing: border-box;
+  z-index: 4;
   display: none; }
   .header__search::after {
     position: absolute;
@@ -378,6 +384,7 @@ body {
   min-width: 277px;
   padding: 20px 17px 22px 19px;
   box-sizing: border-box;
+  z-index: 4;
   display: none; }
 
 .header__form::after {
@@ -1406,6 +1413,9 @@ body {
   background-repeat: no-repeat;
   background-position: 0 0; }
 
+.filter__richness-input:focus + .filter__richness-input-label::before {
+  outline: solid 2px #2b6845; }
+
 .filter__fillers {
   border: none;
   margin: 0;
@@ -1474,6 +1484,9 @@ body {
   background-repeat: no-repeat;
   background-position: 0 0; }
 
+.filter__fillers-input:focus + .filter__fillers-label::before {
+  outline: solid 2px #2b6845; }
+
 .filter__submit-button {
   width: 144px;
   height: 36px;
@@ -1509,5 +1522,66 @@ body {
 .goods__filter {
   margin-top: 34px; }
 
-.good__item {
+.goods__item {
   margin-bottom: 32px; }
+
+.goods__pages {
+  display: flex;
+  flex-direction: row;
+  min-width: 80px;
+  margin-left: auto;
+  margin-top: 47px;
+  box-sizing: border-box; }
+
+.goods__pages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row; }
+
+.goods__button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent; }
+  .goods__button--active path {
+    fill: #ffffff; }
+  .goods__button--active {
+    cursor: pointer; }
+  .goods__button--previous {
+    transform: rotate(180deg);
+    margin-right: 15px; }
+  .goods__button--next {
+    margin-left: 15px; }
+
+.goods__page {
+  display: flex;
+  width: 26px;
+  height: 26px;
+  margin-right: 4px;
+  box-sizing: border-box;
+  border-radius: 50%; }
+  .goods__page:last-child {
+    margin-right: 0; }
+  .goods__page:hover {
+    background-color: #9db1a5;
+    cursor: pointer; }
+  .goods__page--current {
+    background-color: #ffffff;
+    pointer-events: none; }
+  .goods__page--current .goods__page-link {
+    color: #323232; }
+
+.goods__page-link {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding-left: 9px;
+  padding-top: 5px; }

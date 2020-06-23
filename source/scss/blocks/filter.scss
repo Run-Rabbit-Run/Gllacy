@@ -208,6 +208,10 @@
   background-position: 0 0;
 }
 
+.filter__richness-input:focus + .filter__richness-input-label::before {
+  outline: solid 2px #2b6845;
+}
+
 .filter__fillers {
   border: none;
 
@@ -289,6 +293,12 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+.filter__fillers-input:focus + .filter__fillers-label::before {
+  outline: solid 2px #2b6845;
+}
+
+
 
 .filter__submit-button {
   width: 144px;
