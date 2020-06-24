@@ -72,7 +72,7 @@
           <input class="input header__input-login" type="text" id="login" name="login" placeholder="email@example.com">
           <label class="visually-hidden" for="login">Логин</label>
 
-          <input class="input header__input-password" type="password" id="password" name="password" placeholder="&#149&#149&#149&#149&#149&#149&#149&#149">
+          <input class="input header__input-password" type="password" id="password" name="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">
           <label class="visually-hidden" for="password">Пароль</label>
 
           <div class="header__form-flex-wrapper">
@@ -264,7 +264,7 @@
           <p class="mailing__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form class="mailing__form" action="#" method="POST">
             <label class="visually-hidden" for="email">Введите ваш email</label>
-            <input class="mailing__input input" type="email" name="email" placeholder="email@example.com">
+            <input class="mailing__input input" type="email" id="email" placeholder="email@example.com">
             <input class="mailing__button button" type="submit" value="Отправить">
           </form>
         </div>
@@ -331,9 +331,9 @@
     <p class="feedback__header">Мы обязательно вам ответим!</p>
     <form class="feedback__form" action="#" method="POST">
       <label class="visually-hidden" for="name">Введите ваше Имя и Фамилию</label>
-      <input class="feedback__name input" name="name" type="text" placeholder="Имя Фамилия">
-      <label class="visually-hidden" for="email">Введите ваш email</label>
-      <input class="feedback__email input" name="email" type="email" placeholder="email@example.com">
+      <input class="feedback__name input" id="name" type="text" placeholder="Имя Фамилия">
+      <label class="visually-hidden" for="email-feedback">Введите ваш email</label>
+      <input class="feedback__email input" id="email-feedback" type="email" placeholder="email@example.com">
       <textarea class="feedback__textarea input" name="feedback" rows="5" placeholder="В свободной форме"></textarea>
       <input class="feedback__button button" type="submit" value="Отправить">
     </form>

@@ -1,8 +1,10 @@
 .goods {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+
+  padding-bottom: 100px;
 }
 
 .goods__filter {
@@ -11,9 +13,18 @@
 
 .goods__item {
   margin-bottom: 32px;
+  margin-right: 26px;
+
+  &:nth-child(4n+1) {
+    margin-right: 0;
+  }
 }
 
 .goods__pages {
+  position: absolute;
+  bottom: 27px;
+  right: 0;
+
   display: flex;
   flex-direction: row;
 
