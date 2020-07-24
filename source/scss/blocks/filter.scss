@@ -30,7 +30,7 @@
   width: 195px;
 
   appearance: none;
-  background-image: url(/img/icon-select.png);
+  background-image: url(../img/icon-select.png);
   background-repeat: no-repeat;
   background-position: right 15px top 50%;
 
@@ -39,7 +39,7 @@
 
   &:focus {
     background-color: #ffffff;
-    background-image: url(/img/icon-select-active.png);
+    background-image: url(../img/icon-select-active.png);
 
     color: #323232;
   }
@@ -172,38 +172,38 @@
     width: 22px;
     height: 22px;
 
-    background-image: url(/img/icon-radio-off.png);
+    background-image: url(../img/icon-radio-off.png);
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 
   &:hover::before {
-    background-image: url(/img/icon-radio-off-hover.png);
+    background-image: url(../img/icon-radio-off-hover.png);
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 }
 
 .filter__richness-input:disabled + .filter__richness-input-label::before {
-  background-image: url(/img/icon-radio-off-disabled.png);
+  background-image: url(../img/icon-radio-off-disabled.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .filter__richness-input:checked + .filter__richness-input-label::before {
-  background-image: url(/img/icon-radio-on.png);
+  background-image: url(../img/icon-radio-on.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .filter__richness-input:checked + .filter__richness-input-label:hover::before {
-  background-image: url(/img/icon-radio-on-hover.png);
+  background-image: url(../img/icon-radio-on-hover.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .filter__richness-input:disabled:checked + .filter__richness-input-label::before {
-  background-image: url(/img/icon-radio-on-disabled.png);
+  background-image: url(../img/icon-radio-on-disabled.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -258,38 +258,38 @@
     width: 22px;
     height: 22px;
 
-    background-image: url(/img/icon-checkbox-off.png);
+    background-image: url(../img/icon-checkbox-off.png);
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 
   &:hover::before {
-    background-image: url(/img/icon-checkbox-off-hover.png);
+    background-image: url(../img/icon-checkbox-off-hover.png);
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 }
 
 .filter__fillers-input:disabled + .filter__fillers-label::before {
-  background-image: url(/build/img/icon-checkbox-off-disabled.png);
+  background-image: url(../img/icon-checkbox-off-disabled.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .filter__fillers-input:checked + .filter__fillers-label::before {
-  background-image: url(/img/icon-checkbox-on.png);
+  background-image: url(../img/icon-checkbox-on.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .filter__fillers-input:checked + .filter__fillers-label:hover::before {
-  background-image: url(/img/icon-checkbox-on-hover.png);
+  background-image: url(../img/icon-checkbox-on-hover.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .filter__fillers-input:disabled:checked + .filter__fillers-label::before {
-  background-image: url(/img/icon-checkbox-on-disabled.png);
+  background-image: url(../img/icon-checkbox-on-disabled.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }

@@ -456,7 +456,7 @@ body {
   height: 11px;
   margin-top: 10px;
   margin-left: 6px;
-  background-image: url(/img/x.svg);
+  background-image: url(../img/x.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f8f7f4;
@@ -469,9 +469,9 @@ body {
   margin-left: 10px;
   flex-shrink: 0; }
   .header__cart-item-image--orange {
-    background-image: url(/img/icon-yellow-icecream.png); }
+    background-image: url(../img/icon-yellow-icecream.png); }
   .header__cart-item-image--strawberry {
-    background-image: url(/img/icon-pink-icecream.png); }
+    background-image: url(../img/icon-pink-icecream.png); }
 
 .header__cart-item {
   display: flex;
@@ -534,13 +534,13 @@ body {
   background-repeat: no-repeat;
   background-position: center; }
   .slider__item--1 {
-    background-image: url(/img/slide-1-background.png); }
+    background-image: url(../img/slide-1-background.png); }
   .slider__item--2 {
-    background-image: url(/img/slide-2-background.png);
+    background-image: url(../img/slide-2-background.png);
     background-position: left 32px bottom 22px;
     display: none; }
   .slider__item--3 {
-    background-image: url(/img/slide-3-background.png);
+    background-image: url(../img/slide-3-background.png);
     background-position: left 34px bottom 27px;
     display: none; }
 
@@ -619,12 +619,12 @@ body {
   color: #ffffff; }
 
 .promo--raspberry {
-  background-image: url(/img/raspberry-background.png);
+  background-image: url(../img/raspberry-background.png);
   background-repeat: no-repeat;
   background-position: center; }
 
 .promo--chocolate {
-  background-image: url(/img/chocolate-background.png);
+  background-image: url(../img/chocolate-background.png);
   background-repeat: no-repeat;
   background-position: center; }
 
@@ -711,7 +711,7 @@ body {
   left: 0;
   width: 61px;
   height: 61px;
-  background-image: url(/img/hit.png); }
+  background-image: url(../img/hit.png); }
 
 .good__hover {
   display: none;
@@ -736,7 +736,7 @@ body {
   margin-top: 38px; }
 
 .features {
-  background-image: url(/img/waffle-background.png);
+  background-image: url(../img/waffle-background.png);
   background-repeat: repeat;
   background-position: center;
   padding-left: 20px;
@@ -771,16 +771,16 @@ body {
     width: 49px;
     height: 49px; }
   .features__item-text--icecream-icon::after {
-    background-image: url(/img/icecream-icon.png);
+    background-image: url(../img/icecream-icon.png);
     background-repeat: no-repeat; }
   .features__item-text--cow-icon::after {
-    background-image: url(/img/cow-icon.png);
+    background-image: url(../img/cow-icon.png);
     background-repeat: no-repeat; }
   .features__item-text--leaf-icon::after {
-    background-image: url(/img/leaf-icon.png);
+    background-image: url(../img/leaf-icon.png);
     background-repeat: no-repeat; }
   .features__item-text--thermometer-icon::after {
-    background-image: url(/img/thermometer-icon.png);
+    background-image: url(../img/thermometer-icon.png);
     background-repeat: no-repeat; }
 
 .features__list {
@@ -806,7 +806,7 @@ body {
   padding: 23px 20px;
   box-sizing: border-box;
   border-radius: 15px;
-  background-image: url(/img/strawberry-icecream-background.jpg);
+  background-image: url(../img/strawberry-icecream-background.jpg);
   background-repeat: no-repeat; }
 
 .blog__header {
@@ -840,7 +840,7 @@ body {
   min-height: 220px;
   box-sizing: border-box;
   border-radius: 15px;
-  background-image: url(/img/post-background.png);
+  background-image: url(../img/post-background.png);
   background-position: center;
   background-repeat: no-repeat;
   border: 5px solid transparent; }
@@ -900,7 +900,7 @@ body {
     left: 266px;
     width: 218px;
     height: 142px;
-    background-image: url(/img/pin.png);
+    background-image: url(../img/pin.png);
     background-repeat: no-repeat; }
 
 .map__contacts {
@@ -1028,7 +1028,7 @@ body {
     left: -22px;
     width: 15px;
     height: 13px;
-    background-image: url(/img/heart-icon.svg);
+    background-image: url(../img/heart-icon.svg);
     background-repeat: no-repeat; }
 
 .footer__copyright {
@@ -1125,7 +1125,7 @@ body {
   width: 18px;
   height: 18px;
   background-color: transparent;
-  background-image: url(/img/x-big.png);
+  background-image: url(../img/x-big.png);
   background-repeat: no-repeat;
   cursor: pointer; }
 
@@ -1266,7 +1266,7 @@ body {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-image: url(/img/icon-select.png);
+  background-image: url(../img/icon-select.png);
   background-repeat: no-repeat;
   background-position: right 15px top 50%;
   color: #ffffff;
@@ -1276,7 +1276,7 @@ body {
   line-height: 18px; }
   .filter__select:focus {
     background-color: #ffffff;
-    background-image: url(/img/icon-select-active.png);
+    background-image: url(../img/icon-select-active.png);
     color: #323232; }
 
 .filter__option {
@@ -1387,31 +1387,31 @@ body {
     left: 0;
     width: 22px;
     height: 22px;
-    background-image: url(/img/icon-radio-off.png);
+    background-image: url(../img/icon-radio-off.png);
     background-repeat: no-repeat;
     background-position: 0 0; }
   .filter__richness-input-label:hover::before {
-    background-image: url(/img/icon-radio-off-hover.png);
+    background-image: url(../img/icon-radio-off-hover.png);
     background-repeat: no-repeat;
     background-position: 0 0; }
 
 .filter__richness-input:disabled + .filter__richness-input-label::before {
-  background-image: url(/img/icon-radio-off-disabled.png);
+  background-image: url(../img/icon-radio-off-disabled.png);
   background-repeat: no-repeat;
   background-position: 0 0; }
 
 .filter__richness-input:checked + .filter__richness-input-label::before {
-  background-image: url(/img/icon-radio-on.png);
+  background-image: url(../img/icon-radio-on.png);
   background-repeat: no-repeat;
   background-position: 0 0; }
 
 .filter__richness-input:checked + .filter__richness-input-label:hover::before {
-  background-image: url(/img/icon-radio-on-hover.png);
+  background-image: url(../img/icon-radio-on-hover.png);
   background-repeat: no-repeat;
   background-position: 0 0; }
 
 .filter__richness-input:disabled:checked + .filter__richness-input-label::before {
-  background-image: url(/img/icon-radio-on-disabled.png);
+  background-image: url(../img/icon-radio-on-disabled.png);
   background-repeat: no-repeat;
   background-position: 0 0; }
 
@@ -1458,31 +1458,31 @@ body {
     left: 1px;
     width: 22px;
     height: 22px;
-    background-image: url(/img/icon-checkbox-off.png);
+    background-image: url(../img/icon-checkbox-off.png);
     background-repeat: no-repeat;
     background-position: 0 0; }
   .filter__fillers-label:hover::before {
-    background-image: url(/img/icon-checkbox-off-hover.png);
+    background-image: url(../img/icon-checkbox-off-hover.png);
     background-repeat: no-repeat;
     background-position: 0 0; }
 
 .filter__fillers-input:disabled + .filter__fillers-label::before {
-  background-image: url(/build/img/icon-checkbox-off-disabled.png);
+  background-image: url(../img/icon-checkbox-off-disabled.png);
   background-repeat: no-repeat;
   background-position: 0 0; }
 
 .filter__fillers-input:checked + .filter__fillers-label::before {
-  background-image: url(/img/icon-checkbox-on.png);
+  background-image: url(../img/icon-checkbox-on.png);
   background-repeat: no-repeat;
   background-position: 0 0; }
 
 .filter__fillers-input:checked + .filter__fillers-label:hover::before {
-  background-image: url(/img/icon-checkbox-on-hover.png);
+  background-image: url(../img/icon-checkbox-on-hover.png);
   background-repeat: no-repeat;
   background-position: 0 0; }
 
 .filter__fillers-input:disabled:checked + .filter__fillers-label::before {
-  background-image: url(/img/icon-checkbox-on-disabled.png);
+  background-image: url(../img/icon-checkbox-on-disabled.png);
   background-repeat: no-repeat;
   background-position: 0 0; }
 

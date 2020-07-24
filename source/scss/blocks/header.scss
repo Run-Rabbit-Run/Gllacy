@@ -397,7 +397,7 @@
   margin-top: 10px;
   margin-left: 6px;
 
-  background-image: url(/img/x.svg);
+  background-image: url(../img/x.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f8f7f4;
@@ -414,11 +414,11 @@
   margin-left: 10px;
 
   &--orange {
-    background-image: url(/img/icon-yellow-icecream.png);
+    background-image: url(../img/icon-yellow-icecream.png);
   }
   
   &--strawberry {
-    background-image: url(/img/icon-pink-icecream.png);
+    background-image: url(../img/icon-pink-icecream.png);
   }
 
   flex-shrink: 0;
